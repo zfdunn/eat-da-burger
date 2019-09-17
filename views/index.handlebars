@@ -1,0 +1,47 @@
+<h1>Cheeseburger Eddie's</h1>
+<h3 id="current">CB Eddie's Menu</h3>
+<ul class="uneaten">
+    {{#each burgers}}
+    {{#unless consumed}}
+    <li>
+        <p class="list">
+            {{burger_name}}
+            <button class="eat-burger btn btn-light" id="on-menu" data-id="{{id}}" data-consumed="1">
+                <i class="fas fa-hamburger"></i> WITH SOME CHEESE ON IT!
+            </button>
+        </p>
+    </li>
+    {{/unless}}
+    {{/each}}
+</ul>
+<h3 id="previous">Previous Burger</h3>
+<ul>
+    {{#each burgers}}
+    {{#if consumed}}
+    <li>
+        <p>
+            {{burger_name}}
+{{!-- referenced some of peer's code in button classes (start) --}}
+            <button class="eat-burger btn btn-light" id="off-menu" data-id="{{id}}" data-consumed="0">
+                <i class="fas fa-utensils"></i>
+                ADD, WITH SOME CHEESE ON IT
+            </button>
+        </p>
+    </li>
+    {{#if}}
+    {{#each}}
+</ul>
+<form class="addBurger">
+    <div class="form-group">
+        <label for="addNew">
+            <h3>Add another Eddie's Favorites!</h3>
+        </label>
+        <input type="text" class="form-control add-new" id="add-new" placeholder="Add Another Here">
+        <br>
+        <button type="submit" class="btn btn-primary post">
+            <i class="fas fa-plus-square"></i>
+            Submit Your Burger, or forever hold your Cheese..... 
+        </button>
+{{!-- referenced some of peer's code in button classes (end) --}}
+    </div>
+</form>
