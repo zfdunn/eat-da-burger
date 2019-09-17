@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/zfdunn/eat-da-burger#readme",
   "dependencies": {
-    "node": "^12.10.0"
+    "express": "^4.17.1",
+    "mysql": "^2.17.1",
+    "node": "^12.10.0",
+    "orm": "^5.0.4"
   }
 }
