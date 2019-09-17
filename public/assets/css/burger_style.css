@@ -1,0 +1,36 @@
+body {
+    background-image: url(../images/burger.jpg);
+};
+li {
+    color: #F3E7CA;
+    font-size: medium;
+};
+h1 {
+    color: #F3E7CA;
+    font-family: 'Manjari', serif;
+    font-weight: bolder;
+    font-size: 75px;
+    text-align: center;
+};
+.devour {
+    display: inline;
+};
+#addBurger {
+    color: white;
+    display: inline;
+};
+.add-new {
+    width: 435px;
+    background-color: lightblue;
+};
+textarea {
+    width: 200px;
+};
+ul {
+    list-style-type: none;
+    font-family: fantasy, serif;
+};
+.post {
+    background-attachment: #ef593a;
+    font-family: fantasy, serif;
+};
